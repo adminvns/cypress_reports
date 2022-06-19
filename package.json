@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "test:chrome": "cypress run --browser chrome",
-  "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-  "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+  
   "scripts": {
-    "test": "npx cypress run --record --key 94360e4e-7fcd-41b4-a486-b25407581abc"
+    "test": "npx cypress run --record --key 94360e4e-7fcd-41b4-a486-b25407581abc --browser chrome",
+    "test:chrome": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "",

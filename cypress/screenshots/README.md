@@ -1,1 +1,0 @@
-just a screenshot folder for storage

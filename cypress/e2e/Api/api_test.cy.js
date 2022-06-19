@@ -17,7 +17,7 @@ describe('API_Test', () => {
         }).then((response)=>{
 
                 expect(response.status).to.eq(200)
-                expect(response.body.message).to.eq('Products(get method)')
+                expect(response.body.message).to.eq('Products(GET method)')
         })
     });
     

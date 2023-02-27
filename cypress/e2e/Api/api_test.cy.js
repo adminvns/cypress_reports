@@ -9,7 +9,7 @@ describe('API_Test', () => {
         cy.request({
 
             method:'GET',
-            url: 'https://adminvns-testapi.herokuapp.com/products',
+            url: 'https://testapi-4r9g.onrender.com/products',
             header:{
                 'Content-Type':'application/json',
             }

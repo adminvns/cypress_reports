@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-    
+
 describe('First_test',()=>{
 
     it('website_visits',()=>{
@@ -9,3 +9,5 @@ describe('First_test',()=>{
 
 
 })          
+
+// import 'cypress-mochawesome-reporter'

@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
-    "test": "npx cypress run --record --key 94360e4e-7fcd-41b4-a486-b25407581abc --browser chrome",
+    "test": "npx cypress run --browser chrome",
     "test:chrome": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.1.0",
+    "cypress": "^10.11.0",
     "mochawesome": "6.1.1",
-        "mochawesome-merge": "4.1.0",
-        "mochawesome-report-generator": "5.1.0"
+    "mochawesome-merge": "4.1.0",
+    "mochawesome-report-generator": "5.1.0"
   }
 }

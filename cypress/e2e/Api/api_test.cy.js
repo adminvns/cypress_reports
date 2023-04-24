@@ -3,7 +3,7 @@
 
 describe('API_Test', () => {
 
-    it('get user', () => {
+    it('Get Product Site 1', () => {
         
 
         cy.request({
@@ -18,6 +18,23 @@ describe('API_Test', () => {
 
                 expect(response.status).to.eq(200)
                 expect(response.body.message).to.eq('Products(GET method)')
+        })
+    });
+    it('Get Order Site 2', () => {
+        
+
+        cy.request({
+
+            method:'GET',
+            url: 'https://democaclient.azurewebsites.net/orders',
+            header:{
+                'Content-Type':'application/json',
+            }
+
+        }).then((response)=>{
+
+                expect(response.status).to.eq(200)
+                expect(response.body.message).to.eq('Order was fetched')
         })
     });
     

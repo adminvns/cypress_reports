@@ -26,5 +26,5 @@ steps:
   
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'cypress/reports/mochawesome'
+    PathtoPublish: 'cypress/reports/html'
     ArtifactName: 'TestResults'

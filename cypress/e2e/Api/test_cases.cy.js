@@ -37,6 +37,16 @@ describe('API_Test', () => {
                 expect(response.body.message).to.eq('Order was fetched')
         })
     });
+
+    describe('websiteUI Check Test ',()=>{
+
+        it('website_visits',()=>{
+            cy.visit('https://www.doogler.in/')
+                
+        })
+    
+    
+    });  
     
 })
 

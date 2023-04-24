@@ -23,8 +23,9 @@ steps:
 - script: npm run test
   displayName: 'Run Cypress tests'
   continueOnError: 'false'
-  
-- task: PublishBuildArtifacts@1
+
+- task: PublishTestResults@2
   inputs:
-    PathtoPublish: 'cypress/reports/html'
-    ArtifactName: 'TestResults'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'cypress/Test-results.xml'
+    testRunTitle: 'Test Results'

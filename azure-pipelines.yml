@@ -27,5 +27,5 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'cypress/reports/index.html'
+    testResultsFiles: 'cypress/reports/html/index.html'
     testRunTitle: 'Test'

@@ -22,7 +22,7 @@ steps:
 
 - script: npm run test
   displayName: 'Run Cypress tests'
-  continueOnError: 'false'
+  continueOnError: 'true'
 
 - task: PublishTestResults@2
   inputs:

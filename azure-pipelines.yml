@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
   
 container:
-  image: 'cypress/browsers:node12.18.0-chrome83-ff77'
+  image: 'cypress/browsers:node18.12.0-chrome107'
   
 steps:
 - checkout: self
@@ -13,7 +13,7 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '12.18.0'
-  displayName: 'Install Node.js 12.18.0'
+  displayName: 'Install Node.js 18.12.0'
 
 - script: |
     npm ci

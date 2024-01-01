@@ -26,7 +26,7 @@ describe('API_Test', () => {
         cy.request({
 
             method:'GET',
-            url: 'https://democaclient.azurewebsites.net/orders',
+            url: 'https://testapi-4r9g.onrender.com/orders',
             header:{
                 'Content-Type':'application/json',
             }

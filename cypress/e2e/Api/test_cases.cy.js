@@ -41,7 +41,7 @@ describe('API_Test', () => {
     describe('websiteUI Check Test ',()=>{
 
         it('website_visits',()=>{
-            cy.visit('https://www.doogler.in/')
+            cy.visit('https://testapi-4r9g.onrender.com/')
                 
         })
     

@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
   
 container:
-  image: 'cypress/browsers:node18.12.0-chrome107'
+  image: 'cypress/browsers:22.16.0'
   
 steps:
 - checkout: self
@@ -17,8 +17,8 @@ steps:
 
 - script: |
     npm ci
-    $(npm bin)/cypress verify
-  displayName: 'Install cypress and verify'
+    npx cypress verify
+  displayName: 'Install Cypress and verify'
 
 - script: npm run test
   displayName: 'Run Cypress tests'

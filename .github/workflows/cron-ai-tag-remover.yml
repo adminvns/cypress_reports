@@ -1,4 +1,4 @@
-name: Cron Run
+name: Cron Run-Ai-Tag
 on:
   schedule:
     - cron: '*/30 * * * *'

@@ -19,7 +19,7 @@ jobs:
           (async () => {
             const browser = await chromium.launch({ headless: false });
             const page = await browser.newPage();
-            await page.goto('https://devando.onrender.com/index.html');
+            await page.goto('https://www.devando.in/');
             await page.waitForTimeout(50000);
             await browser.close();
           })();

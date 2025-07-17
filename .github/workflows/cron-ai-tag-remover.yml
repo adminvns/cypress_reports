@@ -19,7 +19,7 @@ jobs:
           (async () => {
             const browser = await chromium.launch({ headless: false });
             const page = await browser.newPage();
-            await page.goto('https://remove-ai-tag.onrender.com');
+            await page.goto('https://atr.devando.in/');
             await page.waitForTimeout(50000);
             await browser.close();
           })();
